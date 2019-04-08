@@ -4,7 +4,7 @@ from csv import reader
 # Each row is list
 
 # Using reader
-with open("fighters.csv", 'r') as csv_file:
+with open("fighters.csv", "r") as csv_file:
     csv_reader = reader(csv_file)
     for row in csv_reader:
         print(row)
@@ -13,7 +13,7 @@ with open("fighters.csv", 'r') as csv_file:
 print("\n************ Anoter approach ************\n")
         
         
-with open("fighters.csv", 'r') as csv_file:
+with open("fighters.csv", "r") as csv_file:
     csv_reader = reader(csv_file)
     # Using next jumps over headers and everything after it is printed
     next(csv_reader)
@@ -24,7 +24,7 @@ with open("fighters.csv", 'r') as csv_file:
 print("\n************ Anoter approach ************\n")
         
         
-with open("fighters.csv", 'r') as csv_file:
+with open("fighters.csv", "r") as csv_file:
     csv_reader = reader(csv_file)
     # Reads data from file to list data
     data = list(csv_reader)
@@ -35,7 +35,7 @@ with open("fighters.csv", 'r') as csv_file:
 print("\n************ Anoter approach ************\n")
         
         
-with open("fighters.csv", 'r') as csv_file:
+with open("fighters.csv", "r") as csv_file:
     csv_reader = reader(csv_file, delimiter="|")
     for row in csv_reader:
         print(data)
