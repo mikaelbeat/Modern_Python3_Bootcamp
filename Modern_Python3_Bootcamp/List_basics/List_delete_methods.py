@@ -1,4 +1,4 @@
-print("\n********** Clear **********")
+print("\n********** Clear **********\n")
 
 list1 = [1, 2, 3, 4, 5]
 
@@ -8,7 +8,7 @@ list1.clear()
 print(list1)
 
 
-print("\n********** Pop **********")
+print("\n********** Pop **********\n")
 
 list2 = [1, 2, 3, 4, 5]
 
@@ -26,7 +26,7 @@ last_item = list3.pop()
 print("\n" + last_item)
 
 
-print("\n********** Remove **********")
+print("\n********** Remove **********\n")
 
 list4 = ["One", "Two", "Three", "Four"]
 
