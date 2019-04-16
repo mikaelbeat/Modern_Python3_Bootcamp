@@ -11,3 +11,10 @@ instructor = {
 
 
 print(instructor)
+
+
+print("\n********** Check is value in dictionary **********\n")
+print("\nCheck is phone string in dictionary")
+print("phone" in instructor)
+print("\nCheck is 'Python' string in dictionary values")
+print("Python" in instructor.values())
