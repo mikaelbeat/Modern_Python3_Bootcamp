@@ -4,6 +4,7 @@ class Comment:
         self.username = username
         self.text = text
         self.likes = likes
+        self._msg = "This is private"
         
 c = Comment("Davey", "lol", 3)
 

@@ -1,5 +1,12 @@
 
-print("\n********** Keyword args return dictionary **********\n")
+# Keyword args are given in form
+# def kwargs_demo(**kwargs):
+#
+# print(kwargs_demo(job="instructor"))
+
+
+
+print("\n********** Keyword kwargs return dictionary **********\n")
 def fav_colors(**kwargs):
     for person, color in kwargs.items():
       print(f"{person}'s favourite color is {color}")  
@@ -13,6 +20,6 @@ def special_greeting(**kwargs):
         return "You get a special greeting!"
     elif "David" in kwargs:
         return f"{kwargs['David']} David! "
-    return "Not sure wh this is!"
+    return "Not sure who this is!"
 
-print(special_greeting(Bob="hello"))
+print(special_greeting(David="hello"))
