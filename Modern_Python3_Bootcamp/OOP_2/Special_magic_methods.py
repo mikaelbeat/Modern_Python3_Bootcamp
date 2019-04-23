@@ -20,7 +20,7 @@ class Human:
     def __mul__(self, other):
         if isinstance(other, int):
             return [copy(self) for i in range(other)]
-        return "Cant multiply"
+        return "Can't multiply"
         
         
         
