@@ -1,0 +1,129 @@
+
+
+REGEX BASICS
+
+\d - Digit 0-9
+\w - Letter, digit or underscore
+\s - Whitespace character
+\D - Not a digit
+\W - Not a word character
+\S - Not a whitespace character
+. - Any character except line break 
+
+
+EXAMPLE
+k\w 				-> Matches letter k and any letter, digit or underscore after
+\w{3} 				-> Matches fist 3 letter, digit or underscore in any word
+\w{3,7} 			-> Matches words between 3 and 7 characters
+\d{3} \d{3}-\d{4}	-> Matches 415 412-9876
+
+
+**************************************************************************************************************
+
+
+QUANTIFIERS
+
++ - One or more
+{3} - Exactly x times
+{3, 5} - Three to five times
+{4,} - Four or more times
+* - Zero or more times
+? - Once or none
+
+
+EXAMPLE 			
+kittens?			-> Matches kitten and kittens
+\d{3} \d{3}-?\d{4}	-> Matches 415 4129876 and 310 467-9876, because -? means that - is optional
+[A-Z-a-z]+			-> Matches any word from A-Z or a-z 
+
+
+**************************************************************************************************************
+
+
+CHARACTER CLASSES AND SETS
+
+[]  - Used to specify range for selection
+^ 	- 
+
+
+EXAMPLE
+[a-z]				-> Matches all letters between a-z
+[A-Z]{2,}			-> Matches all words with capital letter which length is more than 2 characters
+[a-z0-9]			-> Matches all lowercase letters and digits
+[^k]				-> Matches all which are not k
+[^0-9aeiou@]		-> Matches all which are not in given range
+
+
+**************************************************************************************************************
+
+
+ANCHORS AND BOUNDARIES
+
+^	- Start of string or line
+$	- End of string or line
+\b	- Word boundary, is either space or end of the line
+
+
+EXAMPLE
+^\d{3} \d{3}-?\d{4}	-> Matches string which starts given way	-> 818 765-6234 Phone
+\d{3} \d{3}-?\d{4}$	-> Matches string which ends given way		-> Phone 818 765-6234
+\b\w+\b				-> Matches all words "Hello world I am typing stuff"
+\b\w+\b				-> Matches words which are surrounded by space or at the end of the line	
+
+
+**************************************************************************************************************
+
+
+LOGICAL OR AND CAPTURE GROUPS
+
+(\(\d{3}\)|\d{3}) \d{3} \d{4}	-> Matches both 415 345 0998 and (415) 345 0998
+
+
+(\(\d{3}\)|\d{3})
+
+Means that beginning could be three digits between parenthesis (\d{3}\)
+or |
+just three digits \d{3}
+
+That is also defined between another parenthesis to which guides regex to choose both if available
+
+(\(\d{3}\)|\d{3})
+(\(three digits)OR three digits)
+
+
+-----------------------------------------------------------------------
+
+
+Grouping regex returns result in two parts
+
+(Mr\.|Mrs\.) ([A-Za-z]+ [A-Za-z]+) -> Return two different matches Mr. Luca Guadagnino and Mrs. Tilda Swinton
+
+(Word or Word) ([Word with any letter] [Word with any letter])
+
+
+-----------------------------------------------------------------------
+
+
+(https?://)([A-Za-z_-]+\.[A-Za-z]+) 	-> Matches both https://pythex.org and http://google.com
+
+(https? -> Part s? means that s letter is an optional
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
