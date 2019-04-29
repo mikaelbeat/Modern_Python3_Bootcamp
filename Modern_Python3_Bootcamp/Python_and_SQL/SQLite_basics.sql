@@ -4,7 +4,7 @@ Create data file where databases are saved
 
 
 CREATE TABLE cats (
-	name TEXT.
+	name TEXT,
 	breed TEXT,
 	age INTEGER
 );
@@ -20,6 +20,9 @@ SELECT * FROM cats;
 
 SELECT * FROM cats WHERE name is "Red";
 SELECT * FROM cats WHERE breed IS NOT "Russian cat";
+SELECT * FROM cats WHERE breed IS NOT "Russian cat" AND breed IS NOT "Pink cat";
+SELECT * FROM cats WHERE age >= 6;
+SELECT * FROM cats WHERE name LIKE "%tt%";
 
 
 360 -> 4:06
