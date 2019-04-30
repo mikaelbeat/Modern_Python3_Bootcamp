@@ -1,0 +1,5 @@
+
+
+reader	   -> Lets you iterate over rows of the CSV as lists
+
+DictReader -> Lets you iterate over rows of the CSV as OrderedDicts

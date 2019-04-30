@@ -3,6 +3,8 @@ from csv import reader
 
 # Each row is list
 
+print("\n************ Basic print ************\n")
+
 # Using reader
 with open("fighters.csv", "r") as csv_file:
     csv_reader = reader(csv_file)

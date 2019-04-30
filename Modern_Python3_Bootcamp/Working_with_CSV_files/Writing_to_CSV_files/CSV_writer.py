@@ -4,6 +4,7 @@ with open("fighters.csv", "w") as file:
     csv_writer = writer(file)
     csv_writer.writerow(["Character", "Move"])
     csv_writer.writerow(["Ryu", "Hadouken"])
+    csv_writer.writerow(["Cammy", "Kick"])
     
 with open("fighters.csv", "r") as file:
     csv_reader = reader(file)
