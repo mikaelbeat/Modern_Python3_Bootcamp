@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect("my_friends2.db")
+connection = sqlite3.connect("my_friends.db")
 
 c = connection.cursor()
 

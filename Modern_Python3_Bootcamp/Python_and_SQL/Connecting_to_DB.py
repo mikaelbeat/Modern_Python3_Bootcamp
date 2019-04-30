@@ -1,7 +1,7 @@
 
 import sqlite3
 
-connection = sqlite3.connect("my_friends2.db")
+connection = sqlite3.connect("my_friends.db")
 
 # Create cursor object
 c = connection.cursor()
@@ -12,4 +12,4 @@ c.execute("CREATE TABLE friends (first_name TEXT, last_name TEXT, closeness INTE
 # Commit changes
 connection.commit()
 connection.close()
-print("\nCreated database friends with friends table.")
+print("\nCreated database my_friends with friends table.")
