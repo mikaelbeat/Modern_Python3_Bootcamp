@@ -1,0 +1,19 @@
+
+Imports whole module
+import random
+
+
+Imports whole module as given name
+import random as randomizer
+
+
+Imports whole random module
+from randon import *
+
+
+Imports given functions from module
+from random import choice, shuffle
+
+
+Imports given functions from module as given names
+from random import choice as gimme_one, shuffle as mix_things_up
