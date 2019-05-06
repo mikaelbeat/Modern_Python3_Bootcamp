@@ -1,0 +1,10 @@
+
+Makes basic changes to files in current location
+
+autopep8 -i
+
+
+Makes more aggressive changes to code in current location
+
+autopep8 -i -a -a
+
