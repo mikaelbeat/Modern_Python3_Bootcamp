@@ -13,3 +13,5 @@ for book in books:
     price = book.select(".price_color")[0].get_text()
     price = float(price.replace("Â","").replace("£",""))
     
+    
+    # 11:26
