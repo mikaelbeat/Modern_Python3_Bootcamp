@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from time import sleep
 from random import choice
+from csv import DictReader, DictWriter
 
 baseURL = "http://quotes.toscrape.com/"
 
@@ -75,4 +76,20 @@ def start_game(quotes):
     
 
 quotes = scrape_quotes()
-start_game(quotes)
+
+
+with open("quotes.csv", "w") as file:
+    headers = ["text", "author", "bio-link"]
+    csv_writer = DictWriter(file, fieldnames=headers)
+    csv_writer.writeheader()
+    for quote in quotes:
+        csv_writer.writerow(quote)
+
+
+
+
+# lecture 337
+
+
+
+#start_game(quotes)
