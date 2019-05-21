@@ -1,0 +1,2 @@
+
+scrapy runspider -o books.csv scrapy.py
